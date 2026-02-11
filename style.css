@@ -316,6 +316,50 @@ a:hover {
     margin: 20px 0 30px 0;
 }
 
+/* Working Groups Layout */
+
+.wg-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Card styling */
+
+.wg-card {
+    background: #f8f9fb;
+    padding: 25px;
+    border-left: 4px solid #0d1b2a;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wg-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.wg-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.wg-time {
+    font-size: 0.9rem;
+    color: #1b3a57;
+    margin-bottom: 15px;
+}
+
+.wg-card ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.wg-card li {
+    margin-bottom: 5px;
+}
 
 /* Container for mobile scrolling */
 
@@ -365,5 +409,9 @@ footer {
 
     p, li {
         font-size: 1rem;
+    }
+    
+    .wg-container {
+        grid-template-columns: 1fr;
     }
 }
