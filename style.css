@@ -399,6 +399,40 @@ a:hover {
     transition: background-color 0.2s ease;
 }
 
+/* Venue Page Styling */
+
+.venue-address,
+.venue-map,
+.venue-directions,
+.venue-logistics {
+    margin-top: 40px;
+}
+
+.venue-address p {
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.venue-map iframe {
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Directions blocks */
+
+.direction-block {
+    margin-top: 20px;
+    padding: 18px;
+    background: #f8f9fb;
+    border-left: 4px solid #0d1b2a;
+    border-radius: 6px;
+}
+
+.direction-block h4 {
+    margin-top: 0;
+    font-size: 1.05rem;
+}
+
 /* Container for mobile scrolling */
 
 .table-container {
