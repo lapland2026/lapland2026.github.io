@@ -75,7 +75,14 @@
 
 <footer>
     <p>© 2026 Lapland Scientific Retreat </p>
+    <p class="last-updated">
+    Last updated: <span id="lastModified"></span>
+    </p>
 </footer>
+
+<script>
+    document.getElementById("lastModified").textContent = document.lastModified;
+</script>
 
 </body>
 </html>
