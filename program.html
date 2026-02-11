@@ -1,8 +1,36 @@
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapland Scientific Retreat 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-<h2>Daily Program</h2>
+<body>
+    <header>
+    <h1>Lapland Scientific Retreat 2026</h1>
+    <nav>
+    <ul class="nav-links">
+        <li class="dropdown">
+            <a href="#" class="menu-button">Menu</a>
+            <ul class="dropdown-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="program.html" class="active">Program</a></li>
+                <li><a href="attendees.html">Attendees</a></li>
+                <li><a href="venue.html">Venue</a></li>
+                <li><a href="accommodation.html">Accommodation</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+    </header>
 
-<table>
+    <h2>Daily Program</h2>
+
+    <table>
     <tr>
         <th>Time</th>
         <th>Speaker</th>
@@ -13,4 +41,19 @@
         <td>Prof. X</td>
         <td>Inverse Problems in Imaging</td>
     </tr>
-</table>
+    </table>
+
+    <footer>
+        <p>© 2026 Lapland Scientific Retreat </p>
+        <p class="last-updated">
+        Last updated: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+
+</body>
+</html>
+
