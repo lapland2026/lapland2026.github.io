@@ -255,6 +255,23 @@ a:hover {
     text-decoration: underline;
 }
 
+.pdf-button {
+    display: inline-block;
+    background-color: #0d1b2a;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pdf-button:hover {
+    background-color: #1b3a57;
+    transform: translateY(-2px);
+}
+
 /* Container for mobile scrolling */
 
 .table-container {
