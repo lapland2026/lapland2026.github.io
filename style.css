@@ -208,7 +208,7 @@ a:hover {
 }
 
 .program-table tbody tr:hover {
-    background-color: #cfddee;
+    background-color: #31b5cc;
     transition: background-color 0.2s ease;
 }
 
@@ -288,6 +288,12 @@ a:hover {
     background-color: #1b3a57;
     transform: translateY(-2px);
 }
+
+.pdf-container {
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
 
 /* Container for mobile scrolling */
 
