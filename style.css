@@ -246,30 +246,52 @@ a:hover {
 }
 
 .abstract {
-    display: none; /* hidden by default */
-    margin-top: 8px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 0;
     font-size: 0.9rem;
     color: #2c2c2c;
     line-height: 1.5;
     background-color: #f4f6f9;
-    padding: 8px 12px;
+    padding: 0 12px;
     border-left: 3px solid #0d1b2a;
     border-radius: 3px;
+
+    transition: 
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        margin-top 0.3s ease,
+        padding 0.3s ease;
+}
+
+/* When active */
+.abstract.open {
+    max-height: 500px;   /* large enough for content */
+    opacity: 1;
+    margin-top: 8px;
+    padding: 8px 12px;
 }
 
 .abstract-toggle {
     display: inline-block;
     margin-left: 8px;
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #0d1b2a;
     background: none;
     border: none;
     cursor: pointer;
+    transition: color 0.2s ease;
 }
 
 .abstract-toggle:hover {
-    text-decoration: underline;
+    color: #1b3a57;
+}
+
+/* Active state */
+.abstract-toggle.active {
+    color: #1b3a57;
 }
 
 .pdf-button {
