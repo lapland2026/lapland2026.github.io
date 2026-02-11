@@ -208,8 +208,25 @@ a:hover {
 }
 
 .program-table tbody tr:hover {
-    background-color: #e8eef5;
+    background-color: #cfddee;
     transition: background-color 0.2s ease;
+}
+
+/* Center Program headings */
+
+.program-title,
+.program-day {
+    text-align: center;
+}
+
+.program-title {
+    margin-bottom: 10px;
+}
+
+.program-day {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
 /* Break rows */
