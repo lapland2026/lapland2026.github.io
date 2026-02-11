@@ -499,15 +499,18 @@
 
     <script>
     const buttons = document.querySelectorAll('.abstract-toggle');
+
     buttons.forEach(btn => {
         btn.addEventListener('click', () => {
             const abstract = btn.nextElementSibling;
-            if (abstract.style.display === 'block') {
-                abstract.style.display = 'none';
-                btn.textContent = 'Abstract ▼';
-            } else {
-                abstract.style.display = 'block';
+
+            abstract.classList.toggle('open');
+            btn.classList.toggle('active');
+
+            if (abstract.classList.contains('open')) {
                 btn.textContent = 'Abstract ▲';
+            } else {
+                btn.textContent = 'Abstract ▼';
             }
         });
     });
