@@ -220,6 +220,41 @@ a:hover {
     font-weight: 500;
 }
 
+.affiliation {
+    display: block;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #4a5568;
+    margin-top: 2px;
+}
+
+.abstract {
+    display: none; /* hidden by default */
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #2c2c2c;
+    line-height: 1.5;
+    background-color: #f4f6f9;
+    padding: 8px 12px;
+    border-left: 3px solid #0d1b2a;
+    border-radius: 3px;
+}
+
+.abstract-toggle {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #0d1b2a;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.abstract-toggle:hover {
+    text-decoration: underline;
+}
+
 /* Container for mobile scrolling */
 
 .table-container {
