@@ -107,8 +107,9 @@ nav {
 }
 
 .dropdown-menu a {
-    color: #0d1b2a;
-    font-size: 0.95rem;
+    color: #f2f5f7;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 /* Show on hover */
