@@ -44,11 +44,28 @@ nav {
 }
 
 .nav-links a {
+    position: relative;
     color: white;
     text-decoration: none;
     font-weight: 400;
-    font-size: 1.08rem;
-    transition: opacity 0.3s ease;
+    font-size: 1rem;
+    padding-bottom: 4px;
+}
+
+/* Animated underline */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .nav-links a:hover {
