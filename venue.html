@@ -1,1 +1,48 @@
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapland Scientific Retreat 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Lapland Scientific Retreat 2026</h1>
+    <nav>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="program.html">Program</a>
+            <ul class="dropdown-menu">
+                <li><a href="program.html">Full Program</a></li>
+                <li><a href="working-groups.html">Working Groups</a></li>
+            </ul>
+        </li>
+        <li><a href="attendees.html">Attendees</a></li>
+        <li><a href="venue.html"> class="active">Venue</a></li>
+        <li><a href="accommodation.html">Accommodation</a></li>
+    </ul>
+    </nav>
+</header>
+
+<section>
+    <h2 class="program-title">List of Attendees</h2>
+</section>
+
+<footer>
+    <p>© 2026 Lapland Scientific Retreat </p>
+    <p class="last-updated">
+    Last updated: <span id="lastModified"></span>
+    </p>
+</footer>
+
+<script>
+    document.getElementById("lastModified").textContent = document.lastModified;
+</script>
+
+</body>
+</html>
