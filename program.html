@@ -30,9 +30,9 @@
     
 
     <section>
-    <h2>Program</h2>
+    <h1>Program</h1>
 
-    <h3>Monday, March 09</h3>
+    <h2>Monday, March 09</h2>
 
     <div class="table-container">
         <table class="program-table">
@@ -55,21 +55,46 @@
                 </tr>
                 <tr>
                     <td>15:00 – 15:30</td>
-                    <td>Prof. Lassi Roininen</td>
-                    <td>Talk title</td>
+                    <td>Prof. Lassi Roininen<br>
+                    <span class="affiliation">LUT University</span>
+                    </td>
+                    <td>
+                    Inverse Problems
+                    <button class="abstract-toggle">Abstract ▼</button>
+                    <div class="abstract">
+                    This talk will cover the fundamentals of inverse problems, including 
+                    mathematical modeling, numerical solution techniques, and applications
+                    in imaging and data assimilation.
+                    </div>
+                    </td>
                 </tr>
             </tbody>
         </table>
     </div>
     </section>
     
-
     <footer>
         <p>© 2026 Lapland Scientific Retreat </p>
         <p class="last-updated">
         Last updated: <span id="lastModified"></span>
         </p>
     </footer>
+
+    <script>
+    const buttons = document.querySelectorAll('.abstract-toggle');
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const abstract = btn.nextElementSibling;
+            if (abstract.style.display === 'block') {
+                abstract.style.display = 'none';
+                btn.textContent = 'Abstract ▼';
+            } else {
+                abstract.style.display = 'block';
+                btn.textContent = 'Abstract ▲';
+            }
+        });
+    });
+    </script>
 
     <script>
         document.getElementById("lastModified").textContent = document.lastModified;
