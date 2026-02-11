@@ -35,7 +35,7 @@ nav {
 .nav-links {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 20px 0 0 0;
 }
 
 .nav-links li {
@@ -84,6 +84,13 @@ nav {
 .dropdown {
     position: relative;
     display: inline-block;
+}
+
+.menu-button {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 /* Hidden submenu */
