@@ -50,7 +50,7 @@
             <tbody>
                 <!-- Welcome -->
                 <tr>
-                    <td>12:15 - 12:30</td>
+                    <td>12:00 - 12:30</td>
                     <td>Prof. Lassi Roininen</td>
                     <td>Welcome and Opening Remarks</td>
                 </tr>
@@ -63,64 +63,72 @@
                 <!-- Talk 1 -->
                 <tr>
                     <td>15:00 – 15:30</td>
-                    <td>Prof. Lassi Roininen<br>
-                        <span class="affiliation">LUT University</span>
+                    <td>Lisa Hickl<br>
+                        <span class="affiliation">TU Ilmenau</span>
                     </td>
                     <td>
-                        Inverse Problems in Imaging
+                        On the algorithmic and theoretical path towards optimal personalised treatment
                         <button class="abstract-toggle">Abstract ▼</button>
                         <div class="abstract">
-                            This talk will cover the fundamentals of inverse problems, including 
-                            mathematical modeling, numerical solution techniques, and applications 
-                            in imaging and data assimilation.
+                            Tailoring medical treatment strategies to the covariates of specific patient
+                            subgroups or even to individuals has shown highly promising results in improving
+                            therapeutic outcomes. To enable personalized therapeutic approaches, a first
+                            essential step is to identify or learn the causal relationships between medical
+                            interventions, patient covariates and disease progression or improvement. We
+                            illustrate this using a real-world data challenge on cellular information retrieval.
+                            Machine-learning methods such as Random Forests can provide deeper insights into
+                            potentially relevant biomarkers that distinguish healthy from diseased groups. In
+                            the context of rare immune disorders, such methods allow hidden relationships to be
+                            uncovered in a significantly shorter time frame compared to manual analysis. Because
+                            the data is usually collected across multiple days, transport mapping is required to
+                            appropriately normalize the distributions to ensure technical variation does not
+                            interfere with patient-specific individuality. We further investigate under which
+                            mathematical conditions this transformation is justified. Once these relationships
+                            are established and a predictive model has been constructed, sequentially incoming
+                            patient data can be integrated with model predictions. This enables the use of rein-
+                            forcement-learning techniques for optimal decision-making in the presence of uncertainty.
                         </div>
                     </td>
-                </tr>
-
-                <!-- Coffee Break -->
-                <tr class="break">
-                    <td>10:30 – 11:00</td>
-                    <td colspan="2">Coffee Break</td>
                 </tr>
 
                 <!-- Talk 2 -->
                 <tr>
-                    <td>11:00 – 12:00</td>
-                    <td>
-                        Dr. Bob Example<br>
-                        <span class="affiliation">Institute of Applied Mathematics</span>
+                    <td>15:30 – 16:00</td>
+                    <td>Dimitri Domnjuk<br>
+                        <span class="affiliation">TU Ilmenau</span>
                     </td>
                     <td>
-                        Data Assimilation Techniques
+                        Graphhomomorphisms for Learning on Molecules
                         <button class="abstract-toggle">Abstract ▼</button>
                         <div class="abstract">
-                            Introduction to data assimilation methods, applications in geophysics, 
-                            and integration with machine learning approaches.
+                            Neural Graph Pattern Machines (GPMs) have established themselves as a powerful
+                            paradigm, empirically outperforming Message Passing Neural Networks (MPNNs) by
+                            overcoming the 1-Weisfeiler-Leman expressivity upper bound. However, while
+                            their ability to distinguish more graphs than 1-WL is understood, a rigorous
+                            framework explaining their statistical stability and generalization capabilities
+                            on molecular tasks remains missing. In this work, we bridge this gap by grounding
+                            GPMs in the theory of Graph Limits. We demonstrate that stochastic pattern sampling
+                            is not merely a heuristic for feature extraction, but an efficient Monte-Carlo
+                            estimator for Homomorphism Densities, which form a complete basis for the topology
+                            of sparse graphs, the ”Graphings”. This perspective shifts the focus from discrete
+                            separation to continuous estimability: We utilize the Benjamini-Schramm topology to
+                            formally characterize which molecular properties are learnable independent of system
+                            size, and which are not. Building on this, we address critical shortcomings of current
+                            path-based GPMs: (i) We introduce a Multi-Pattern Basis to capture degree moments and
+                            spectral properties that paths miss; (ii) We extend the notion of graphhomomorphisms
+                            to the 3D space of molecules and prove their Lipschitz stability to resolve chirality;
+                            and (iii) We extend the from attention-based correlations introduced by the GPM to 
+                            Structural Interventions, enabling causal reasoning and explainability. Our framework
+                            provides the theoretical guarantee that GPMs do not just memorize finite structures,
+                            but approximate the underlying physical laws of the molecular limit object.
                         </div>
                     </td>
                 </tr>
 
-                <!-- Lunch -->
+                <!-- Meeting of Working Group -->
                 <tr class="break">
-                    <td>12:00 – 13:30</td>
-                    <td colspan="2">Lunch Break</td>
-                </tr>
-
-                <!-- Talk 3 -->
-                <tr>
-                    <td>13:30 – 14:30</td>
-                    <td>
-                        Prof. Carol Example<br>
-                        <span class="affiliation">University of Anywhere</span>
-                    </td>
-                    <td>
-                        Machine Learning in Applied Math
-                        <button class="abstract-toggle">Abstract ▼</button>
-                        <div class="abstract">
-                            Overview of machine learning techniques applied to inverse problems, 
-                            including neural networks and optimization-based approaches.
-                        </div>
-                    </td>
+                    <td>16:00 – 18:00</td>
+                    <td colspan="2">Meeting of WG-5 and Collab. Work/ Free working</td>
                 </tr>
             </tbody>
         </table>
