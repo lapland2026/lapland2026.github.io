@@ -51,7 +51,7 @@
                 <!-- Welcome -->
                 <tr>
                     <td>12:00 - 12:30</td>
-                    <td>Prof. Lassi Roininen</td>
+                    <td>Lassi Roininen</td>
                     <td>Welcome and Opening Remarks</td>
                 </tr>
                 
@@ -126,9 +126,9 @@
                 </tr>
 
                 <!-- Meeting of Working Group -->
-                <tr class="break">
+                <tr>
                     <td>16:00 – 18:00</td>
-                    <td colspan="2">Meeting of WG-5 and Collab. Work/ Free working</td>
+                    <td colspan="2">Meeting of WG-5/ Collaboration Work/ Free working</td>
                 </tr>
             </tbody>
         </table>
@@ -145,33 +145,48 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Welcome -->
-                <tr>
-                    <td>09:00 – 09:30</td>
-                    <td>Workshop Organizers</td>
-                    <td>
-                        Opening Remarks
-                        <button class="abstract-toggle">Abstract ▼</button>
-                        <div class="abstract">
-                            Welcome note and overview of the workshop objectives and schedule.
-                        </div>
-                    </td>
-                </tr>
-
                 <!-- Talk 1 -->
                 <tr>
-                    <td>09:30 – 10:30</td>
+                    <td>09:30 – 10:00</td>
                     <td>
-                        Prof. Alice Example<br>
-                        <span class="affiliation">University of Somewhere</span>
+                        Angelica Castillo<br>
+                        <span class="affiliation">LUT University</span>
                     </td>
                     <td>
-                        Inverse Problems in Imaging
+                        Data Assimilation Applications for the Radiation Belts
                         <button class="abstract-toggle">Abstract ▼</button>
                         <div class="abstract">
-                            This talk will cover the fundamentals of inverse problems, including 
-                            mathematical modeling, numerical solution techniques, and applications 
-                            in imaging and data assimilation.
+                            The accurate reconstruction and prediction of the near-Earth space environment are crucial
+                            for anomaly detection, empirical model development, and a deeper understanding of physical
+                            processes. Data assimilation (DA) provides a powerful framework for obtaining reanalysis
+                            and forecasts that integrate model and observational uncertainties. This work reviews recent
+                            advances in the application of Kalman filtering tech-niques to the outer radiation belt system.
+                            We discuss the assimilation of electron flux observations into diffusion models of the radiation
+                            belts, followed by the implementation of a split-operator technique to address challenges
+                            encountered when applying full 3D Kalman filters. Additionally, we highlight the development
+                            of 3D split-operator standard Kalman filter, together with extensions to higher-dimensional
+                            ensemble Kalman Filtering approaches. The application of Kalman filtering techniques has been
+                            demonstrated in the development of a real-time forecasting of radiation belt electron fluxes.
+                            Furthermore, in this presentation we explore the uses of DA-based reanalysis for not just global
+                            state analysis of the radiation belts, but also for potential identification of missing physical
+                            processes, error assessment using innovation vectors, and intercalibration of data assimilation
+                            techniques across multiple missions.
+                        </div>
+                    </td>                    
+                </tr>
+
+                <!-- Talk 2 -->
+                <tr>
+                    <td>10:00 – 10:30</td>
+                    <td>
+                        Tomás Soto<br>
+                        <span class="affiliation">LUT University</span>
+                    </td>
+                    <td>
+                        Inhomogeneous priors for Bayesian inversion
+                        <button class="abstract-toggle">Abstract ▼</button>
+                        <div class="abstract">
+                            TBA
                         </div>
                     </td>
                 </tr>
@@ -182,45 +197,89 @@
                     <td colspan="2">Coffee Break</td>
                 </tr>
 
-                <!-- Talk 2 -->
+                <!-- Talk 3 -->
                 <tr>
-                    <td>11:00 – 12:00</td>
-                    <td>
-                        Dr. Bob Example<br>
-                        <span class="affiliation">Institute of Applied Mathematics</span>
+                    <td>11:00 – 11:30</td>
+                    <td>Alejandra Avalos Pacheco<br>
+                        <span class="affiliation">JKU Linz</span>                  
                     </td>
                     <td>
-                        Data Assimilation Techniques
+                        Rotational Invariant Sparse Bayesian Factor Models with the l1-ball
                         <button class="abstract-toggle">Abstract ▼</button>
                         <div class="abstract">
-                            Introduction to data assimilation methods, applications in geophysics, 
-                            and integration with machine learning approaches.
+                            Integrative factor models have proven to be crucial for identifying reproducible
+                            biological pathways shared by different cancer studies that traditional factor
+                            analysis approaches may miss due to systematic biases. Existing integrative
+                            factor models, while valuable, often neglect the impact of covariates and confounders,
+                            introducing bias into the signal and/or lack a study-specific factor structure totally
+                            independent of the common latent structure. Moreover, these models require post-processing
+                            steps for loadings, such as varimax rotation, and restrictions on the loading matrix for
+                            identifiability, essential for interpretation.
+                            To address these challenges, we present a novel class of integrative factor models:
+                            "Rotational Invariant Sparse Factor Models" (RISFM). RISFM displays several advantages:
+                            1) Providing sparse low-dimensional common and study-specific factors while adjusting for
+                            confounding effects using Bayesian methods. 2) Addressing identifiability issues crucial
+                            for interpretation through the l1-ball prior. 3) Ensuring computational efficiency for
+                            practical applicability. We validate the proposed RISFM approach through extensive
+                            simulations and its application to hepatocellular carcinoma human-mice gene expression
+                            cancer data. The results showcase the utility of RISFM to determine the overall human-mice
+                            genomic similarities, to identify the most appropriate mouse model for studying different
+                            human patient sub-populations, and to obtain the co-regulation mechanisms that are
+                            idiosyncratic to only humans or mice. The main goal is to improve the current understanding
+                            of mouse mutation models and contribute to develop new ones for precision medicine.
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>11:30 – 12:00</td>
+                    <td>
+                        Joaquín Míguez<br>
+                        <span class="affiliation">Universidad Carlos III de Madrid</span>
+                    </td>
+                    <td>
+                        Constrained Bayesian filtering for high dimensional discretely-observed diffusions
+                        <button class="abstract-toggle">Abstract ▼</button>
+                        <div class="abstract">
+                            Bayesian filtering is a fundamental methodology for online inference in stochastic
+                            dynamical systems, but the performance of practical algorithms deteriorates severely
+                            in high-dimensional settings, where standard methods often become unstable or inaccurate.
+                            In this work we investigate a class of constrained Bayesian filtering methods designed
+                            to address this challenge in discretely-observed diffusion systems. The key idea is to
+                            restrict the filtering distribution to suitably chosen feasible sets that reflect
+                            structural properties of the model and the data, thereby excluding unstable or implausible
+                            states while retaining the essential statistical information. We develop a theoretical
+                            framework to analyse the stability and accuracy of such constrained filters, establishing
+                            conditions under which they provide convergent approximations with explicit rates. Finally,
+                            we discuss practical implementation issues and present numerical experiments which show how
+                            constrained Bayesian filtering offers a robust and scalable approach to online inference.
                         </div>
                     </td>
                 </tr>
 
                 <!-- Lunch -->
                 <tr class="break">
-                    <td>12:00 – 13:30</td>
+                    <td>12:00 – 14:00</td>
                     <td colspan="2">Lunch Break</td>
                 </tr>
 
-                <!-- Talk 3 -->
+                <!-- Meeting of Working Group  -->
                 <tr>
-                    <td>13:30 – 14:30</td>
-                    <td>
-                        Prof. Carol Example<br>
-                        <span class="affiliation">University of Anywhere</span>
-                    </td>
-                    <td>
-                        Machine Learning in Applied Math
-                        <button class="abstract-toggle">Abstract ▼</button>
-                        <div class="abstract">
-                            Overview of machine learning techniques applied to inverse problems, 
-                            including neural networks and optimization-based approaches.
-                        </div>
-                    </td>
+                    <td>14:00 – 15:30</td>
+                <td colspan="2">Meeting of WG-3/ Collaboration Work/ Free working</td>
                 </tr>
+                
+                <!-- Coffee Break -->
+                <tr class="break">
+                    <td>15:30 – 16:00</td>
+                    <td colspan="2">Coffee Break</td>
+                </tr>
+                
+                <!-- Meeting of Working Group  -->
+                <tr>
+                    <td>16:00 – 17:30</td>
+                <td colspan="2">Meeting of WG-4/ Collaboration Work/ Free working</td>
+                </tr>         
             </tbody>
         </table>
     </div>
@@ -236,33 +295,33 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Welcome -->
+                <!-- Talk 1 -->
                 <tr>
-                    <td>09:00 – 09:30</td>
-                    <td>Workshop Organizers</td>
+                    <td>09:30 – 10:00</td>
+                    <td>Emma Hannula<br>
+                        <span class="affiliation">LUT University</span>                  
+                    </td>
                     <td>
-                        Opening Remarks
+                        TBA
                         <button class="abstract-toggle">Abstract ▼</button>
                         <div class="abstract">
-                            Welcome note and overview of the workshop objectives and schedule.
+                            TBA
                         </div>
                     </td>
                 </tr>
 
-                <!-- Talk 1 -->
+                <!-- Talk 2 -->
                 <tr>
-                    <td>09:30 – 10:30</td>
+                    <td>10:00 – 10:30</td>
                     <td>
-                        Prof. Alice Example<br>
-                        <span class="affiliation">University of Somewhere</span>
+                        Laura Bazahica<br>
+                        <span class="affiliation">LUT University</span>
                     </td>
                     <td>
-                        Inverse Problems in Imaging
+                        TBA
                         <button class="abstract-toggle">Abstract ▼</button>
                         <div class="abstract">
-                            This talk will cover the fundamentals of inverse problems, including 
-                            mathematical modeling, numerical solution techniques, and applications 
-                            in imaging and data assimilation.
+                            TBA
                         </div>
                     </td>
                 </tr>
@@ -273,44 +332,80 @@
                     <td colspan="2">Coffee Break</td>
                 </tr>
 
-                <!-- Talk 2 -->
+                <!-- Talk 3 -->
                 <tr>
-                    <td>11:00 – 12:00</td>
+                    <td>11:00 – 11:30</td>
                     <td>
-                        Dr. Bob Example<br>
-                        <span class="affiliation">Institute of Applied Mathematics</span>
+                        Svetlana Dubinkina<br>
+                        <span class="affiliation">VU Amsterdam</span>
                     </td>
                     <td>
-                        Data Assimilation Techniques
+                        Neural Field Equations with random data
                         <button class="abstract-toggle">Abstract ▼</button>
                         <div class="abstract">
-                            Introduction to data assimilation methods, applications in geophysics, 
-                            and integration with machine learning approaches.
+                            We study neural field equations, which are prototypical models of large-scale cortical
+                            activity, subject to random data. We view this spatially-extended, nonlocal evolution
+                            equation as a Cauchy problem on abstract Banach spaces, with randomness in the synaptic
+                            kernel, firing rate function, external stimuli, and initial conditions. We determine
+                            conditions on the random data that guarantee existence, uniqueness, and measurability of
+                            the solution for uncertainty quantification (UQ), and examine the regularity of the
+                            solution in relation to the regularity of the inputs. We present results for linear and
+                            nonlinear neural fields, and for the two most common functional setups in the numerical 
+                            analysis of this problem. In addition to the continuous problem, we analyse in abstract
+                            form neural fields that have been spatially discretised, setting the foundations for
+                            analysing UQ schemes.
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>11:30 – 12:00</td>
+                    <td>
+                        Martin Simon<br>
+                        <span class="affiliation">Frankfurt UAS</span>
+                    </td>
+                    <td>
+                        Surrogate Radiative Transfer Observation Operators in NWP
+                        <button class="abstract-toggle">Abstract ▼</button>
+                        <div class="abstract">
+                            Satellite observations play a critical role in numerical weather prediction. In the traditional
+                            Ensemble Kalman Filter, these observations are assimilated by weighting their associated errors
+                            against model uncertainties to produce an optimal estimate. This process requires radiative
+                            transfer simulations for passive, downward-viewing satellite radiometers operating in the visible,
+                            infrared, and microwave spectra. Typically, such simulations rely on numerically integrating
+                            physical laws via models like RTTOV. In talk, we  discuss two data-driven surrogate operators:
+                            First, a fully data driven surrogate operator and second, a data driven correction operator for
+                            radiative transfer based on modern machine-learning architectures from computer vision. Whereas
+                            the former is a fully data-driven emulator,  for the latter, our method adopts an incremental,
+                            hybrid formulation: the network learns only the residuals with respect to RTTOV, thereby embedding
+                            established radiative-transfer physics into the surrogate while enabling data-driven refinement in
+                            complex, cloud-affected conditions.
                         </div>
                     </td>
                 </tr>
 
                 <!-- Lunch -->
                 <tr class="break">
-                    <td>12:00 – 13:30</td>
+                    <td>12:00 – 14:00</td>
                     <td colspan="2">Lunch Break</td>
                 </tr>
 
-                <!-- Talk 3 -->
+                <!-- Meeting of Working Group  -->
                 <tr>
-                    <td>13:30 – 14:30</td>
-                    <td>
-                        Prof. Carol Example<br>
-                        <span class="affiliation">University of Anywhere</span>
-                    </td>
-                    <td>
-                        Machine Learning in Applied Math
-                        <button class="abstract-toggle">Abstract ▼</button>
-                        <div class="abstract">
-                            Overview of machine learning techniques applied to inverse problems, 
-                            including neural networks and optimization-based approaches.
-                        </div>
-                    </td>
+                    <td>14:00 – 15:30</td>
+                <td colspan="2">Meeting of WG-1/ Collaboration Work/ Free working</td>
+                </tr>
+                
+                <!-- Coffee Break -->
+                <tr class="break">
+                    <td>15:30 – 16:00</td>
+                    <td colspan="2">Coffee Break</td>
+                </tr>
+                
+                <!-- Meeting of Working Group  -->
+                <tr>
+                    <td>16:00 – 17:30</td>
+                <td colspan="2">Meeting of WG-2/ Collaboration Work/ Free working</td>
                 </tr>
             </tbody>
         </table>
@@ -327,33 +422,65 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Welcome -->
+                <!-- Talk 1 -->
                 <tr>
-                    <td>09:00 – 09:30</td>
-                    <td>Workshop Organizers</td>
+                    <td>09:30 – 10:00</td>
                     <td>
-                        Opening Remarks
+                        Jana de Wiljes<br>
+                        <span class="affiliation">TU Ilmenau</span>
+                    </td>
+                    <td>
+                        Adaptive Sampling for nested SMC
                         <button class="abstract-toggle">Abstract ▼</button>
                         <div class="abstract">
-                            Welcome note and overview of the workshop objectives and schedule.
+                            In state and parameter estimation problems, nested particle filters are a
+                            particularly suitable approach for sequentially incoming data, as they enable
+                            uncertainty quantification while simultaneously approximating the latent signal
+                            and the model parameters. However, the computational complexity associated with
+                            the large number of required particles often renders such methods impractical.
+                            In this work, we propose an adaptive sampling scheme that dynamically adjusts the
+                            number of particles at both the inner and outer levels, thereby reducing computational
+                            cost while maintaining acceptable levels of estimation accuracy.
                         </div>
                     </td>
                 </tr>
 
-                <!-- Talk 1 -->
+                <!-- Talk 2 -->
                 <tr>
-                    <td>09:30 – 10:30</td>
+                    <td>10:00 – 10:30</td>
                     <td>
-                        Prof. Alice Example<br>
-                        <span class="affiliation">University of Somewhere</span>
+                        Vesa Kaarnioja<br>
+                        <span class="affiliation">LUT University</span>
                     </td>
                     <td>
-                        Inverse Problems in Imaging
+                        Quasi-Monte Carlo methods for Bayesian inverse problems
                         <button class="abstract-toggle">Abstract ▼</button>
                         <div class="abstract">
-                            This talk will cover the fundamentals of inverse problems, including 
-                            mathematical modeling, numerical solution techniques, and applications 
-                            in imaging and data assimilation.
+                            We study the application of quasi-Monte Carlo (QMC) methods for Bayesian inverse problems
+                            governed by PDEs. For the parameterization of the unknown quantities, we consider a model
+                            recently studied by Chernov and Le [1,2] as well as Harbrecht, Schmidlin, and Schwab [3]
+                            in which the input random field is assumed to belong to a Gevrey class. The Gevrey class
+                            contains functions that are infinitely smooth with a growth condition on the higher-order
+                            partial derivatives, but which are nonetheless not analytic in general. Specifically, we
+                            consider the application of QMC for Bayesian shape inversion [4] and electrical impedance
+                            tomography [5] using the techniques developed in [6].
+                            References:<br>
+                            [1] A. Chernov and T. Le. Analytic and Gevrey class regularity for parametric elliptic
+                            eigenvalue problems and applications. SIAM J. Numer. Anal., 62(4):1874-1900, 2024.<br>
+                            [2] A. Chernov and T. Le. Analytic and Gevrey class regularity for parametric semilinear
+                            reaction-diffusion problems and applications in uncertainty quantification. Comput. Math.
+                            Appl., 164:116-130, 2024.<br>
+                            [3] H. Harbrecht, M. Schmidlin, and Ch. Schwab. The Gevrey class implicit mapping theorem
+                            with applications to UQ of semilinear elliptic PDEs. Math. Models Methods Appl. Sci.,
+                            34(5):881-917, 2024.<br>
+                            [4] A. Djurdjevac, V. Kaarnioja, M. Orteu, and C. Schillings. Quasi-Monte Carlo for
+                            Bayesian shape inversion governed by the Poisson problem subject to Gevrey regular domain
+                            deformations. To appear in Monte Carlo and Quasi-Monte Carlo Methods 2024, B. Feng and C.
+                            Lemieux (eds.), Springer Verlag, 2026.<br>
+                            [5] L. Bazahica, V. Kaarnioja, and L. Roininen. Uncertainty quantification for electrical
+                            impedance tomography using quasi-Monte Carlo methods. Inverse Problems 41, 065002, 2025.<br>
+                            [6] V. Kaarnioja and C. Schillings. Quasi-Monte Carlo for Bayesian design of experiment
+                            problems governed by parametric PDEs. Preprint 2024, arXiv:2405.03529 [math.NA].<br>
                         </div>
                     </td>
                 </tr>
@@ -364,44 +491,59 @@
                     <td colspan="2">Coffee Break</td>
                 </tr>
 
-                <!-- Talk 2 -->
+                <!-- Talk 3 -->
                 <tr>
-                    <td>11:00 – 12:00</td>
+                    <td>11:00 – 11:30</td>
                     <td>
-                        Dr. Bob Example<br>
-                        <span class="affiliation">Institute of Applied Mathematics</span>
+                        Heikki Haario<br>
+                        <span class="affiliation">LUT University</span>
                     </td>
                     <td>
-                        Data Assimilation Techniques
+                        Likelihoods for 'likelihood free' problems
                         <button class="abstract-toggle">Abstract ▼</button>
                         <div class="abstract">
-                            Introduction to data assimilation methods, applications in geophysics, 
-                            and integration with machine learning approaches.
+                            TBA
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>11:30 – 12:00</td>
+                    <td>
+                        Lassi Roininen<br>
+                        <span class="affiliation">LUT University</span>
+                    </td>
+                    <td>
+                        TBA
+                        <button class="abstract-toggle">Abstract ▼</button>
+                        <div class="abstract">
+                            TBA
                         </div>
                     </td>
                 </tr>
 
                 <!-- Lunch -->
                 <tr class="break">
-                    <td>12:00 – 13:30</td>
+                    <td>12:00 – 14:00</td>
                     <td colspan="2">Lunch Break</td>
                 </tr>
 
-                <!-- Talk 3 -->
+                <!-- Meeting of Working Group  -->
                 <tr>
-                    <td>13:30 – 14:30</td>
-                    <td>
-                        Prof. Carol Example<br>
-                        <span class="affiliation">University of Anywhere</span>
-                    </td>
-                    <td>
-                        Machine Learning in Applied Math
-                        <button class="abstract-toggle">Abstract ▼</button>
-                        <div class="abstract">
-                            Overview of machine learning techniques applied to inverse problems, 
-                            including neural networks and optimization-based approaches.
-                        </div>
-                    </td>
+                    <td>14:00 – 15:30</td>
+                <td colspan="2">Meeting of WG-6/ Collaboration Work/ Free working</td>
+                </tr>
+                
+                <!-- Coffee Break -->
+                <tr class="break">
+                    <td>15:30 – 16:00</td>
+                    <td colspan="2">Coffee Break</td>
+                </tr>
+                
+                <!-- Meeting of Working Group  -->
+                <tr>
+                    <td>16:00 – 17:30</td>
+                    <td colspan="2"> Working Groups/ Collaboration Work/ Free working</td>
                 </tr>
             </tbody>
         </table>
@@ -418,81 +560,16 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Welcome -->
+                <!-- Free work -->
                 <tr>
-                    <td>09:00 – 09:30</td>
-                    <td>Workshop Organizers</td>
-                    <td>
-                        Opening Remarks
-                        <button class="abstract-toggle">Abstract ▼</button>
-                        <div class="abstract">
-                            Welcome note and overview of the workshop objectives and schedule.
-                        </div>
-                    </td>
+                    <td>09:00 – 10:30</td>
+                    <td colspan="2"> Collaboration Work/ Free working</td>
                 </tr>
 
-                <!-- Talk 1 -->
+                <!-- Closing -->
                 <tr>
-                    <td>09:30 – 10:30</td>
-                    <td>
-                        Prof. Alice Example<br>
-                        <span class="affiliation">University of Somewhere</span>
-                    </td>
-                    <td>
-                        Inverse Problems in Imaging
-                        <button class="abstract-toggle">Abstract ▼</button>
-                        <div class="abstract">
-                            This talk will cover the fundamentals of inverse problems, including 
-                            mathematical modeling, numerical solution techniques, and applications 
-                            in imaging and data assimilation.
-                        </div>
-                    </td>
-                </tr>
-
-                <!-- Coffee Break -->
-                <tr class="break">
                     <td>10:30 – 11:00</td>
-                    <td colspan="2">Coffee Break</td>
-                </tr>
-
-                <!-- Talk 2 -->
-                <tr>
-                    <td>11:00 – 12:00</td>
-                    <td>
-                        Dr. Bob Example<br>
-                        <span class="affiliation">Institute of Applied Mathematics</span>
-                    </td>
-                    <td>
-                        Data Assimilation Techniques
-                        <button class="abstract-toggle">Abstract ▼</button>
-                        <div class="abstract">
-                            Introduction to data assimilation methods, applications in geophysics, 
-                            and integration with machine learning approaches.
-                        </div>
-                    </td>
-                </tr>
-
-                <!-- Lunch -->
-                <tr class="break">
-                    <td>12:00 – 13:30</td>
-                    <td colspan="2">Lunch Break</td>
-                </tr>
-
-                <!-- Talk 3 -->
-                <tr>
-                    <td>13:30 – 14:30</td>
-                    <td>
-                        Prof. Carol Example<br>
-                        <span class="affiliation">University of Anywhere</span>
-                    </td>
-                    <td>
-                        Machine Learning in Applied Math
-                        <button class="abstract-toggle">Abstract ▼</button>
-                        <div class="abstract">
-                            Overview of machine learning techniques applied to inverse problems, 
-                            including neural networks and optimization-based approaches.
-                        </div>
-                    </td>
+                    <td colspan="2"> Closing/ Final Remarks/ Check-out from Cottage</td>
                 </tr>
             </tbody>
         </table>
