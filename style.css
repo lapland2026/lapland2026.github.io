@@ -140,7 +140,7 @@ nav {
 }
 
 .dropdown-menu a {
-    color: #31b5cc;
+    color: #0d1b2a;
     font-size: 1.5rem;
     font-weight: 400;
 }
@@ -225,12 +225,8 @@ a:hover {
     border-bottom: 1px solid #e0e6ed;
 }
 
-.program-table tbody tr:nth-child(even) {
-    background-color: #f4f6f9;
-}
-
 .program-table tbody tr:hover {
-    background-color: #31b5cc;
+    background-color: #5b88bd;
     transition: background-color 0.2s ease;
 }
 
