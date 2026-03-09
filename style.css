@@ -484,8 +484,8 @@ footer p {
 /* -------------------- */
 
 @media (max-width: 768px) {
-
-.nav-list {
+  nav ul {
+    display: flex;
     flex-direction: column;
-}
+  }
 }
