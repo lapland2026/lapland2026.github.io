@@ -285,7 +285,7 @@ a:hover {
 
 /* When active */
 .abstract.open {
-    max-height: 500px;   /* large enough for content */
+    max-height: 800px;   /* large enough for content */
     opacity: 1;
     margin-top: 8px;
     padding: 8px 12px;
@@ -484,8 +484,13 @@ footer p {
 /* -------------------- */
 
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+    
   nav ul {
     display: flex;
     flex-direction: column;
   }
+    
 }
