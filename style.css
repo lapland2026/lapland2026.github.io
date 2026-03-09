@@ -490,14 +490,6 @@ footer p {
   }
 
   .nav-list {
-    display: none;
     flex-direction: column;
-    width: 100%;
-    background: #222;
   }
-
-  .nav-list.active {
-    display: flex;
-  }
-
 }
